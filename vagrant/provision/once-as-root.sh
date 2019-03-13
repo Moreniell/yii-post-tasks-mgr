@@ -58,11 +58,11 @@ info "Configure NGINX"
 sed -i 's/user www-data/user vagrant/g' /etc/nginx/nginx.conf
 echo "Done!"
 
-info "Enabling site configuration"
+info "Enabling app configuration"
 ln -s /app/vagrant/nginx/app.conf /etc/nginx/sites-enabled/app.conf
 echo "Done!"
 
-info "Removing default site configuration"
+info "Removing default app configuration"
 rm /etc/nginx/sites-enabled/default
 echo "Done!"
 
